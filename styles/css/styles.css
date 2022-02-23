@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.desktop_separator {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .advice {
+    font-size: 28px;
+    line-height: 1.20;
+  }
+  .dice {
+    margin-bottom: -23px;
+  }
+  .desktop_separator {
+    display: block;
+  }
+  .mobile_separator {
+    display: none;
+  }
+}
+
+body {
+  background-color: #323a49;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #cee3e9;
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  background-color: #4e5d73;
+  min-width: 343px;
+  max-width: 640px;
+  margin-inline: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 0;
+  border-radius: 20px;
+}
+
+.card .advice_number {
+  color: #52ffa8;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.card .advice {
+  padding-block: 1rem;
+  font-weight: 800;
+}
+
+.card .desktop_separator, .card .mobile_separator {
+  padding-bottom: 1rem;
+  color: #cee3e9;
+}
+
+.card .dice {
+  margin-bottom: -23px;
+  height: 56px;
+  background-color: #52ffa8;
+  border: 1rem solid #52ffa8;
+  border-radius: 100%;
+}
+
+.card .dice:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #52ffa8, 0 0 25px #52ffa8, 0 0 50px #52ffa8, 0 0 200px #52ffa8;
+          box-shadow: 0 0 5px #52ffa8, 0 0 25px #52ffa8, 0 0 50px #52ffa8, 0 0 200px #52ffa8;
+}
+/*# sourceMappingURL=styles.css.map */

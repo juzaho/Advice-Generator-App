@@ -1,0 +1,88 @@
+@import './variables';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+
+.desktop_separator{
+  display: none;
+}
+@media only screen and (min-width: 800px){
+  .advice{
+    font-size: $body-copy;
+    line-height: 1.20;
+  }
+  .dice{
+    margin-bottom: -23px;
+  }
+  .desktop_separator{
+    display: block;
+  }
+  .mobile_separator{
+    display: none;
+  }
+}
+
+
+body{
+  background-color: $dark-grayis-blue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $light-cyan;
+  font-family: $main-font;
+}
+
+.card{
+  background-color: $grayish-blue;
+  min-width: 343px;
+  max-width: 640px;
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 0;
+  border-radius: 20px;
+
+  .advice_number{
+    color: $neon-green;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+  }
+
+  .advice{
+    padding-block: 1rem;
+
+    font-weight: 800;
+  }
+  .desktop_separator, .mobile_separator{
+    padding-bottom: 1rem;
+    color: $light-cyan;
+  }
+  .dice{
+    margin-bottom: -23px;
+    height: 56px;
+    background-color: $neon-green;
+    border: 1rem solid $neon-green;
+    border-radius: 100%;
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 0 5px $neon-green,
+                  0 0 25px $neon-green,
+                  0 0 50px $neon-green,
+                  0 0 200px $neon-green;
+    }
+  }
+}
